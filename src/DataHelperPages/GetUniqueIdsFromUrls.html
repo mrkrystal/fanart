@@ -1,0 +1,40 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Get Unique IDs from URLs</title>
+
+<style>
+textarea {
+    width: 80%;
+    height: 300px;
+}
+</style>
+
+<p>Get Unique IDs from URLs</p>
+
+<div><label>Input</label></div>
+<textarea id="input"></textarea>
+
+<div><label>Output</label></div>
+<textarea id="output" readonly></textarea>
+
+<script>
+const input = document.getElementById('input');
+const output = document.getElementById('output');
+
+input.addEventListener('input', () => {
+    const ids = new Set();
+
+    input.value.split('\n').forEach((line) => {
+        const matches = line.match(/(\d+)\/?$/);
+
+        if (matches !== null) {
+            ids.add(matches[1]);
+        }
+    });
+
+    output.value = JSON.stringify(Array.from(ids));
+
+    output.focus();
+    output.select();
+});
+</script>

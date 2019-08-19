@@ -1,0 +1,22 @@
+{
+  "name": "fanart",
+  "version": "1.0.0",
+  "description": "\"Download and process fanart.\"",
+  "main": "src/FanartParser/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mr. Krystal",
+  "license": "MIT",
+  "devDependencies": {
+    "@ungap/global-this": "^0.3.1",
+    "await-timeout": "^0.4.0",
+    "del": "^4.1.1",
+    "download-file": "^0.1.5",
+    "jsdom": "^15.1.0",
+    "mkdirp": "^0.5.1",
+    "puppeteer": "^1.15.0",
+    "sanitize-filename": "^1.6.1",
+    "turndown": "^5.0.3"
+  }
+}
