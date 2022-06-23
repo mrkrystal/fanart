@@ -13,7 +13,7 @@
     "await-timeout": "^1.1.1",
     "del": "^5.1.0",
     "download-file": "^0.1.5",
-    "jsdom": "^16.3.0",
+    "jsdom": "^16.5.0",
     "mkdirp": "^1.0.4",
     "puppeteer": "^5.2.0",
     "sanitize-filename": "^1.6.3",
